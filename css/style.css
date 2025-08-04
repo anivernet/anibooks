@@ -22,8 +22,17 @@ body{
 .header-top {
     background-color: #f2f4f5;
     padding: 16px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+.header-top-inner{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 .logo {
     display: flex;
@@ -43,6 +52,54 @@ body{
     font-size: 48px;
     color: #2a2d34;
 
+}
+
+.header-switchers{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+}
+
+.theme-toggle{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.language-toggle{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    color: #2a2d34;
+}
+
+.lang-option{
+    padding: 2px 4px;
+    transition: all 0.3s ease;
+}
+
+.lang-option:hover {
+    text-decoration: underline;
+    color: #006098;
+}
+
+.lang-option.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.lang-separator{
+    color: #006098;
 }
 
 .header-bottom {

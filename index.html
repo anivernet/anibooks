@@ -16,10 +16,21 @@
 <body>
     <header class="site-header">
         <div class="header-top">
-            <a href="index.html" class="logo">
+            <div class="header-top-inner">
+                <a href="index.html" class="logo">
                 <img src="icons/logo.svg" alt="Logo" />
                 <span class="logo-text">ANIBOOKS</span>
-            </a>
+                </a>
+            </div>
+
+            <div class="header-switchers">
+                <button class="theme-toggle" title="Змінити тему">🌓</button>
+                    <div class="language-toggle" title="Змінити мову">
+                        <span class="lang-option active" data-lang="uk">UA</span>
+                        <span class="lang-separator">|</span>
+                        <span class="lang-option" data-lang="en">EN</span>
+                    </div>
+            </div>
         </div>
 
         <nav class="header-bottom">
@@ -67,6 +78,6 @@
 
 
     </main>
-
+<script src="js/script.js"></script>
 </body>
 </html>
