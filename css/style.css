@@ -58,18 +58,21 @@ body{
     position: relative;
     border: 1px solid #7da1bd;
     border-radius: 8px;
-    width: 18%;
+    width: 425px;
     height: 40px;
     background: #7da1bd;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
+
 }
 
 .catalog-link{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 40px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -83,15 +86,13 @@ body{
 }
 
 .catalog-arrow{
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
-    pointer-events: none;
-    transition: transform 0.3s ease;
     
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
 }
 
 .catalog-block:hover {
@@ -100,7 +101,7 @@ body{
 }
 
 .catalog-block:hover .catalog-arrow {
-    transform: translateY(-50%) rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .search-block {
