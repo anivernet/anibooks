@@ -1,0 +1,33 @@
+.header-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 20px;
+}
+
+.catalog-link {
+    font-size: 18px;
+    padding-right: 32px;
+}
+
+.catalog-arrow {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-link img {
+    width: 32px;
+    height: 32px;
+}
+
+.logo img {
+    height: 48px;
+}
+
+.logo-text {
+    font-size: 28px;
+}
+
+/* Приховуємо каталог, якщо потрібно */
+.catalog-block {
+    display: none;
+}
