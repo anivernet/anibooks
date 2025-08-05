@@ -64,13 +64,26 @@ body{
 .theme-toggle{
     background: none;
     border: none;
-    font-size: 20px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.theme-icon{
+    width: 32px;
+    height: 32px;
     transition: transform 0.3s ease;
 }
 
+
 .theme-toggle:hover {
     transform: scale(1.1);
+}
+
+.theme-toggle:hover .theme-icon {
+    transform: rotate(20deg);
 }
 
 .language-toggle{
@@ -86,6 +99,7 @@ body{
 .lang-option{
     padding: 2px 4px;
     transition: all 0.3s ease;
+    color: #7da1bd;
 }
 
 .lang-option:hover {
@@ -94,7 +108,7 @@ body{
 }
 
 .lang-option.active {
-    font-weight: 700;
+    font-weight: bold;
     text-decoration: underline;
 }
 
