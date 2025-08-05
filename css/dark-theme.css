@@ -1,0 +1,49 @@
+body.dark-theme {
+    background-color: #1A1D22;
+    color: #E8ECEF;
+}
+
+body.dark-theme .header-top {
+    background-color: #1A1D22;
+}
+
+body.dark-theme .header-bottom {
+    background: #182F42;
+}
+
+body.dark-theme .theme-toggle .theme-icon {
+    content: url("../icons-dark-theme/theme-swicher-to-light.svg");
+}
+
+body.dark-theme .logo img {
+    content: url("../icons-dark-theme/logo-dark-theme.svg");
+}
+
+body.dark-theme .logo-text {
+    color: #E8ECEF;
+}
+
+body.dark-theme .search-block {
+    background-color: #1A1D22;
+    border-color: #E5F4FF;
+}
+
+body.dark-theme .lang-option {
+    color: #7da1bd;
+}
+
+body.dark-theme .lang-option:hover {
+    color: #E8ECEF;
+}
+
+body.dark-theme .lang-separator {
+    color: #E8ECEF;
+}
+
+body.dark-theme .catalog-link {
+    color: #182F42;
+}
+
+body.dark-theme .catalog-arrow {
+    content: url("../icons-dark-theme/arrow-down-dark-theme.svg");
+}

@@ -5,8 +5,9 @@ themeToggle.addEventListener('click', ()=> {
     document.body.classList.toggle('dark-theme');
 
     const isDark = document.body.classList.contains('dark-theme');
-    themeIcon.src = isDark ? 'icons/theme-swicher-to-dark.svg' : 'icons-dark-theme/theme-swicher-to-light.svg';
-    themeIcon.alt = isDark ? 'Темна тема': 'Світла тема';
+
+    themeIcon.src = isDark ? 'icons-dark-theme/theme-swicher-to-light.svg':'icons/theme-swicher-to-dark.svg';
+    themeIcon.alt = isDark ? 'Світла тема':'Темна тема';
 });
 
 const langOptions = document.querySelectorAll('.lang-option');
@@ -18,5 +19,5 @@ langOptions.forEach(Option =>{
         Option.classList.add('active');
         const selectedLang = Option.getAttribute('data-lang');
         console.log("Обрана мова", selectedLang);
-    })
+    });
 });
